@@ -14,6 +14,7 @@ A simple Java application for demonstrating CI/CD with Jenkins.
 - `HelloJenkins.java`: Main Java application
 - `pom.xml`: Maven configuration file
 - `.gitignore`: Git ignore file
+- `Jenkinsfile`: Jenkins Pipeline definition
 
 ## How to Build
 
@@ -29,7 +30,9 @@ mvn compile
 mvn exec:java -Dexec.mainClass="HelloJenkins"
 ```
 
-## Jenkins CI/CD Setup
+## Jenkins CI/CD Setup Options
+
+### Option 1: Freestyle Project
 
 1. Create a new Freestyle project in Jenkins
 2. Configure Git SCM with this repository
@@ -39,3 +42,22 @@ mvn exec:java -Dexec.mainClass="HelloJenkins"
    java HelloJenkins
    ```
 4. Build the project and check console output
+
+### Option 2: Pipeline Project (Recommended)
+
+1. Create a new Pipeline project in Jenkins
+2. Select "Pipeline script from SCM"
+3. Configure Git SCM with this repository
+4. Set Jenkinsfile path to `Jenkinsfile`
+5. Build the project and check console output
+
+## Jenkins Pipeline Stages
+
+The Jenkinsfile defines the following stages:
+
+1. **Checkout**: Retrieves the source code from the repository
+2. **Build**: Compiles the Java source code
+3. **Test**: Verifies the class file was created (placeholder for actual tests)
+4. **Run**: Executes the compiled Java application
+
+Each stage will be displayed in the Jenkins pipeline visualization, making it easy to track progress and identify issues.
