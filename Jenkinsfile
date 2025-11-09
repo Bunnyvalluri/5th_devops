@@ -19,8 +19,7 @@ pipeline {
         stage('Test') {
             steps {
                 echo 'Testing...'
-                // Since we don't have actual tests, we'll just verify the class file exists
-                bat 'dir Hellojenkins.class'
+                bat 'test.bat'
             }
         }
         
