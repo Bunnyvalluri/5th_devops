@@ -17,6 +17,7 @@ A simple Java application for demonstrating CI/CD with Jenkins.
 - `Jenkinsfile`: Jenkins Pipeline definition
 - `build.bat`: Windows batch script to build and run the application
 - `test.bat`: Windows batch script for testing
+- `deploy.bat`: Windows batch script for deployment
 
 ## How to Build
 
@@ -64,7 +65,8 @@ The Jenkinsfile defines the following stages:
 
 1. **Checkout**: Retrieves the source code from the repository
 2. **Build**: Compiles the Java source code
-3. **Test**: Verifies the class file was created (placeholder for actual tests)
+3. **Test**: Runs the test script to verify the build
 4. **Run**: Executes the compiled Java application
+5. **Deploy**: Copies the compiled class file to a deployment directory
 
 Each stage will be displayed in the Jenkins pipeline visualization, making it easy to track progress and identify issues.

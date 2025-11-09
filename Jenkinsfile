@@ -29,6 +29,13 @@ pipeline {
                 bat 'java Hellojenkins'
             }
         }
+        
+        stage('Deploy') {
+            steps {
+                echo 'Deploying application...'
+                bat 'deploy.bat'
+            }
+        }
     }
     
     post {
