@@ -15,6 +15,8 @@ A simple Java application for demonstrating CI/CD with Jenkins.
 - `pom.xml`: Maven configuration file
 - `.gitignore`: Git ignore file
 - `Jenkinsfile`: Jenkins Pipeline definition
+- `build.bat`: Windows batch script to build and run the application
+- `test.bat`: Windows batch script for testing
 
 ## How to Build
 
@@ -22,6 +24,11 @@ A simple Java application for demonstrating CI/CD with Jenkins.
 ```bash
 javac HelloJenkins.java
 java HelloJenkins
+```
+
+### Using the build script (Windows):
+```bash
+build.bat
 ```
 
 ### Using Maven:
