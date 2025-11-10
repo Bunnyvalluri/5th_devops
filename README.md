@@ -1,3 +1,4 @@
+API : AIzaSyB1h3RitbCLfz7Q7ObmxVKxLJWcesuRGao 
 🧾 Terminal Commands Used
 🔧 Git Initialization and Setup
 bash
@@ -44,3 +45,4 @@ Output:
 
 Code
 Hello, Jenkins CI/CD!
+
